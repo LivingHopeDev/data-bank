@@ -48,7 +48,7 @@ const App = () => {
         <div className="mb-4">
           <div className="flex gap-2">
           <img src="src\images\images.png" width={30} height={20} alt="" /> 
-            <div className='' > Farm data</div>
+            <div className='mt-2 font-bold' > Farm data</div>
             <select
               className="border p-2 rounded"
               value={searchType}
