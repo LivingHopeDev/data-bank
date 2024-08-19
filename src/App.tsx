@@ -40,11 +40,11 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#efbbff] p-6">
+    <div className="min-h-screen bg-[#efbbff] p-6 overflow-auto">
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold text-[#800080]">Farm Data Dashboard</h1>
       </header>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto bg-white px-2 py-1 pt-3 border-t-8 border-purple-500 rounded">
         <div className="mb-4">
           <div className="flex gap-2">
           <img src="src\images\images.png" width={30} height={20} alt="" /> 
