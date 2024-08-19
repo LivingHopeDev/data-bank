@@ -47,6 +47,8 @@ const App = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-4">
           <div className="flex gap-2">
+          <img src="src\images\images.png" width={30} height={20} alt="" /> 
+            <div className='' > Farm data</div>
             <select
               className="border p-2 rounded"
               value={searchType}
