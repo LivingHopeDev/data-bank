@@ -40,13 +40,15 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#efbbff] p-6">
+    <div className="min-h-screen bg-[#efbbff] p-6 overflow-auto">
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold text-[#800080]">Farm Data Dashboard</h1>
       </header>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto bg-white px-2 py-1 pt-3 border-t-8 border-purple-500 rounded border-b-8">
         <div className="mb-4">
           <div className="flex gap-2">
+          <img src="src\images\images.png" width={30} height={20} alt="" /> 
+            <div className='mt-2 font-bold' > Farm data</div>
             <select
               className="border p-2 rounded"
               value={searchType}
@@ -56,6 +58,15 @@ const App = () => {
               <option value="state">State</option>
               <option value="country">Country</option>
               <option value="crop">Crop</option>
+            </select>
+            <select
+              className="border p-2 rounded"
+              value={searchType}
+              onChange={(e) => setSearchType(e.target.value)}
+            >
+              <option value="farmers">Farmers</option>
+              <option value="Gender">Gender</option>
+              <option value="Acres">Acres</option>
             </select>
             <input
               type="text"

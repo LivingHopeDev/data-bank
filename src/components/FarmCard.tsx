@@ -14,8 +14,8 @@ const FarmCard = ({ farm }) => {
                     const polygonPoints = data.points.map((point) => [point.latitude, point.longitude]);
 
                     return (
-                        <div className="bg-white p-6 rounded-lg shadow-lg mb-10" key={data.farmId}>
-                            <div className="flex flex-col md:flex-row gap-4">
+                        <div className="bg-white p-6 rounded-lg shadow-inner-lg   mb-10" key={data.farmId}>
+                            <div className="flex flex-col md:flex-row gap-4 ">
                                 {/* <img src={data.imageUrl} alt={data.name} className="w-full md:w-1/3 rounded-lg" /> */}
                                 <div className="flex-grow">
                                     <h2 className="text-2xl font-bold text-[#800080]">{data.name}</h2>
