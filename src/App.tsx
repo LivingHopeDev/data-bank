@@ -58,8 +58,11 @@ const App = () => {
               <option value="state">State</option>
               <option value="country">Country</option>
               <option value="crop">Crop</option>
+              <option value="farmers">Farmers</option>
+              <option value="Gender">Gender</option>
+              <option value="Acres">Acres</option>
             </select>
-            <select
+            {/* <select
               className="border p-2 rounded"
               value={searchType}
               onChange={(e) => setSearchType(e.target.value)}
@@ -67,7 +70,7 @@ const App = () => {
               <option value="farmers">Farmers</option>
               <option value="Gender">Gender</option>
               <option value="Acres">Acres</option>
-            </select>
+            </select> */}
             <input
               type="text"
               className="flex-grow border p-2 rounded"
