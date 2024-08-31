@@ -38,6 +38,21 @@ const App = () => {
         case 'crop':
           response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
           break;
+          case 'name':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_name/${search}`);
+          break;
+          case 'crop':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
+          break;
+          case 'gender':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_gender/${search}`);
+          break;
+          case 'crop':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
+          break;
+          case 'crop':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
+          break;
         default:
           break;
       }
@@ -83,9 +98,10 @@ const App = () => {
               <option value="state">State</option>
               <option value="country">Country</option>
               <option value="crop">Crop</option>
-              <option value="farmers">Farmers</option>
-              <option value="Gender">Gender</option>
-              <option value="Acres">Acres</option>
+              <option value="name">Name</option>
+              <option value="gender">Gender</option>
+              <option value="farmSize_lessThan">Farm size less than </option>
+              <option value="farmSize_greaterThan">Farm size less than </option>
             </select>
             <input
               type="text"
