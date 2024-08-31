@@ -38,20 +38,17 @@ const App = () => {
         case 'crop':
           response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
           break;
-          case 'name':
+        case 'name':
           response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_name/${search}`);
           break;
-          case 'crop':
-          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
-          break;
-          case 'gender':
+        case 'gender':
           response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_gender/${search}`);
           break;
-          case 'crop':
-          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
+        case 'farmSize_lessThan':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_smaller_than_size/${search}`);
           break;
-          case 'crop':
-          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_crop/${search}`);
+        case 'farmSize_greaterThan':
+          response = await axios.get(`https://kitovu-fetch.vercel.app/fetch_by_greater_than_size/${search}`);
           break;
         default:
           break;
